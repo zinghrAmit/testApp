@@ -4,7 +4,7 @@ import comp from '../index';
 
 const Stack = createStackNavigator();
 
-const AppNavigator = () => {
+const ProfileNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Profile" component={comp.ProfileScreen} />
@@ -14,4 +14,4 @@ const AppNavigator = () => {
     );
 };
 
-export default AppNavigator;
+export default ProfileNavigator;

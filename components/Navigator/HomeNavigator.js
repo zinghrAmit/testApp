@@ -4,15 +4,15 @@ import comp from '../index';
 
 const Stack = createStackNavigator();
 
-const AppNavigator = () => {
+const HomeNavigator = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="Home" component={comp.HomeScreen} />
-            <Stack.Screen name="Learn More" component={comp.LearnMore} />
-            <Stack.Screen name="Get Started" component={comp.GetStarted} />
+            <Stack.Screen name="HomeMain" component={comp.HomeScreen} />
+            <Stack.Screen name="LearnMore" component={comp.LearnMore} />
+            <Stack.Screen name="GetStarted" component={comp.GetStarted} />
             <Stack.Screen name="Register" component={comp.Register} />
         </Stack.Navigator>
     );
 };
 
-export default AppNavigator;
+export default HomeNavigator;
