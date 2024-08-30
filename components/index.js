@@ -10,6 +10,10 @@ import LearnMore from "./LearnMore";
 import ProfileNavigator from "./Navigator/ProfileNavigator";
 import HomeNavigator from "./Navigator/HomeNavigator";
 import GetStarted from "./GetStarted";
+import FeatureOne from "./FeatureOne";
+import FeatureTwo from "./FeatureTwo";
+import FeatureThree from "./FeatureThree";
+import FeatureFour from "./FeatureFour";
 
 const comp = {
     Topbar,
@@ -23,7 +27,11 @@ const comp = {
     LearnMore,
     ProfileNavigator,
     HomeNavigator,
-    GetStarted
+    GetStarted,
+    FeatureOne,
+    FeatureTwo,
+    FeatureThree,
+    FeatureFour
 };
 
 export default comp;
