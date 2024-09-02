@@ -8,27 +8,42 @@ const SettingsScreen = () => {
                 <Text style={styles.sectionTitle}>General Settings</Text>
                 <View style={styles.settingItem}>
                     <Text style={styles.settingLabel}>Enable Notifications</Text>
-                    <Switch value={true} onValueChange={(value) => console.log('Notifications:', value)} />
+                    <Switch 
+                        value={true} 
+                        onValueChange={(value) => console.log('Notifications:', value)} 
+                    />
                 </View>
                 <View style={styles.settingItem}>
                     <Text style={styles.settingLabel}>Dark Mode</Text>
-                    <Switch value={false} onValueChange={(value) => console.log('Dark Mode:', value)} />
+                    <Switch 
+                        value={false} 
+                        onValueChange={(value) => console.log('Dark Mode:', value)} 
+                    />
                 </View>
             </View>
 
             <View style={styles.section}>
                 <Text style={styles.sectionTitle}>Account Settings</Text>
-                <TouchableOpacity style={styles.button} onPress={() => console.log('Change Password')}>
+                <TouchableOpacity 
+                    style={styles.button} 
+                    onPress={() => console.log('Change Password')}
+                >
                     <Text style={styles.buttonText}>Change Password</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => console.log('Update Email')}>
+                <TouchableOpacity 
+                    style={styles.button} 
+                    onPress={() => console.log('Update Email')}
+                >
                     <Text style={styles.buttonText}>Update Email</Text>
                 </TouchableOpacity>
             </View>
 
             <View style={styles.section}>
                 <Text style={styles.sectionTitle}>Privacy Settings</Text>
-                <TouchableOpacity style={styles.button} onPress={() => console.log('Manage Privacy')}>
+                <TouchableOpacity 
+                    style={styles.button} 
+                    onPress={() => console.log('Manage Privacy')}
+                >
                     <Text style={styles.buttonText}>Manage Privacy</Text>
                 </TouchableOpacity>
             </View>
