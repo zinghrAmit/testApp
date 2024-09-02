@@ -59,10 +59,11 @@ const styles = StyleSheet.create({
         marginBottom: 30,
     },
     logo: {
-        width: 150,
-        height: 150,
+        width: "100%",
+        height: 250,
         resizeMode: 'contain',
         marginBottom: 20,
+        borderRadius: 10
     },
     title: {
         fontSize: 28,
