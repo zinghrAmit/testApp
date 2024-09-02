@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 5,
     },
     featureImage: {
-        width: 120,
+        width: "100%",
         height: 120,
         marginBottom: 10,
         resizeMode: 'contain',

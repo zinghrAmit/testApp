@@ -28,7 +28,7 @@ const App = () => {
                     headerShown: false,
                     tabBarStyle: {
                         position: 'absolute',
-                        backgroundColor: '#f5dddd',
+                        backgroundColor: '#efefef',
                         borderTopWidth: 0,
                         elevation: 0,
                         shadowOpacity: 0,
