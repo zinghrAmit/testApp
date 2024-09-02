@@ -14,6 +14,7 @@ import FeatureOne from "./FeatureOne";
 import FeatureTwo from "./FeatureTwo";
 import FeatureThree from "./FeatureThree";
 import FeatureFour from "./FeatureFour";
+import { ThemeProvider } from "./Theme_Context/Theme";
 
 const comp = {
     Topbar,
@@ -31,7 +32,8 @@ const comp = {
     FeatureOne,
     FeatureTwo,
     FeatureThree,
-    FeatureFour
+    FeatureFour,
+    ThemeProvider
 };
 
 export default comp;
