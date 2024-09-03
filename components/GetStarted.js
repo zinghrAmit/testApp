@@ -11,7 +11,7 @@ const GetStarted = () => {
     const navigation = useNavigation();
 
     const handleWhatsAppPress = () => {
-        const whatsappUrl = 'https://wa.me/1234567890'; // Replace with your WhatsApp number
+        const whatsappUrl = 'https://wa.me/1234567890';
         Linking.openURL(whatsappUrl).catch((err) => console.error("Couldn't load page", err));
     };
 
@@ -23,7 +23,7 @@ const GetStarted = () => {
             <ScrollView contentContainerStyle={styles.container}>
                 <View style={styles.header}>
                     <Image
-                        source={img} // Replace with your logo URL
+                        source={img} 
                         style={styles.logo}
                     />
                     <Text style={styles.title}>Welcome to the Future</Text>
@@ -88,23 +88,28 @@ const styles = StyleSheet.create({
         marginBottom: 30,
     },
     button: {
-        backgroundColor: '#25D366', // WhatsApp green color
+        backgroundColor: '#25D366', 
         paddingVertical: 15,
         paddingHorizontal: 30,
         borderRadius: 5,
         alignItems: 'center',
-        flexDirection: 'row', // Align icon and text horizontally
+        flexDirection: 'row', 
         justifyContent: 'center',
-        width: '100%', // Ensure button takes full width
+        width: '100%', 
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 }
     },
     buttonText: {
         color: '#ffffff',
         fontSize: 18,
         fontWeight: 'bold',
-        marginLeft: 10, // Space between icon and text
+        marginLeft: 10, 
     },
     icon: {
-        marginRight: 10, // Space between icon and text
+        marginRight: 10, 
     },
 });
 

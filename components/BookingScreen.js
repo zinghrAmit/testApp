@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     input: {
-        height: 50, // Increased height
+        height: 50, 
         borderColor: '#ddd',
         borderWidth: 1,
         borderRadius: 5,
@@ -97,10 +97,15 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     button: {
-        backgroundColor: '#007bff',
+        backgroundColor: '#1683a8',
         paddingVertical: 15,
         borderRadius: 5,
         alignItems: 'center',
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 }
     },
     buttonText: {
         color: '#ffffff',

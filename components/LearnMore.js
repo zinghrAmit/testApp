@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 28,
         fontWeight: 'bold',
-        color: '#007bff',
+        color: '#207a99',
         marginBottom: 20,
     },
     image: {
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     sectionTitle: {
         fontSize: 22,
         fontWeight: 'bold',
-        color: '#007bff',
+        color: '#1683a8',
         marginBottom: 20,
         textAlign: 'center',
     },
@@ -143,12 +143,17 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     getStartedButton: {
-        backgroundColor: '#007bff',
+        backgroundColor: '#1683a8',
         paddingVertical: 10,
         paddingHorizontal: 30,
         borderRadius: 5,
         alignItems: 'center',
-        width: '100%', // Ensure button takes full width
+        width: '100%',
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 }
     },
     getStartedButtonText: {
         color: '#ffffff',

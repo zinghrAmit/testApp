@@ -32,7 +32,7 @@ const FeatureFour = ({ navigation }) => {
                 
                 <TouchableOpacity 
                     style={styles.button}
-                    onPress={() => navigation.goBack()} // Navigate back to the previous screen
+                    onPress={() => navigation.goBack()} 
                 >
                     <Text style={styles.buttonText}>Back to Home</Text>
                 </TouchableOpacity>

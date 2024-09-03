@@ -11,8 +11,8 @@ const CustomTabBar = (props) => {
 const styles = StyleSheet.create({
     tabBar: {
         borderTopWidth: 0,
-        elevation: 0, // Removes shadow on Android
-        shadowOpacity: 0, // Removes shadow on iOS
+        elevation: 0, 
+        shadowOpacity: 0, 
     },
 });
 

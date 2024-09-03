@@ -3,12 +3,14 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import comp from './components/index';
 import { ThemeProvider } from './components/Theme_Context/Theme';
+import { ImageBackground } from 'react-native-web';
+import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 const App = () => {
     return (
-        <ThemeProvider>
+        <>
             <comp.Topbar />
             <Tab.Navigator
                 screenOptions={({ route }) => ({
@@ -47,12 +49,19 @@ const App = () => {
                 })}
             >
                 <Tab.Screen name="Home" component={comp.HomeNavigator} />
-                <Tab.Screen name="Settings" component={comp.SettingsScreen} />
                 <Tab.Screen name="Bookings" component={comp.BookingScreen} />
                 <Tab.Screen name="Profile" component={comp.ProfileNavigator} />
+                <Tab.Screen name="Settings" component={comp.SettingsScreen} />
             </Tab.Navigator>
-        </ThemeProvider>
+        </>
     );
 };
+
+const styles = StyleSheet.create({
+    background: {
+        flex: 1,
+        resizeMode: 'cover',
+    },
+});
 
 export default App;

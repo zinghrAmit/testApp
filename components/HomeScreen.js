@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, ImageBackground } from 'react-native';
 
 const background = require('../assets/images/bg.jpg');
+const backgroundTwo = require('../assets/images/bg2.jpg');
 const one = require('../assets/images/feature1.jpg');
 const two = require('../assets/images/feature2.jpg');
 
@@ -11,7 +12,7 @@ const HomeScreen = () => {
 
     return (
         <ImageBackground
-            source={background}
+            source={backgroundTwo}
             style={styles.background}
         >
             <ScrollView contentContainerStyle={styles.container}>
@@ -170,13 +171,18 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     actionButton: {
-        backgroundColor: '#007bff',
+        backgroundColor: '#1683a8',
         paddingVertical: 15,
         paddingHorizontal: 30,
         borderRadius: 5,
         marginVertical: 10,
         alignItems: 'center',
         width: '80%',
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 }
     },
     actionButtonText: {
         color: '#ffffff',

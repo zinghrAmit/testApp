@@ -7,7 +7,7 @@ const Topbar = () => {
         <View style={styles.container}>
             <Text style={styles.brand}>Brand_Name</Text>
             <View style={styles.profileContianer}>
-                <Icon name="user" size={24} color="#dedee0" style={styles.icon} />
+                <Icon name="user" size={24} color="#fbfdfd" style={styles.icon} />
                 {/* <Text>User_Name</Text> */}
             </View>
         </View>
@@ -17,7 +17,7 @@ const Topbar = () => {
 const styles = StyleSheet.create({
     container: {
         width: "100%",
-        backgroundColor: "#252e79",
+        backgroundColor: "#0a94b3",
         padding: 30,
         borderRadius: 5,
         flexDirection: "row",
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     brand: {
         fontWeight: "bold",
         fontSize: 16,
-        color: "#dedee0"
+        color: "white"
     },
     icon: {
         marginRight: 16,

@@ -85,11 +85,16 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     button: {
-        backgroundColor: '#007bff',
+        backgroundColor: '#1683a8',
         paddingVertical: 15,
         borderRadius: 5,
         alignItems: 'center',
         marginBottom: 10,
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 }
     },
     buttonText: {
         color: '#ffffff',
