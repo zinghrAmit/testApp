@@ -2,8 +2,6 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import comp from './components/index';
-import { ThemeProvider } from './components/Theme_Context/Theme';
-import { ImageBackground } from 'react-native-web';
 import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();

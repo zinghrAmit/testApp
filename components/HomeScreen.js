@@ -4,6 +4,7 @@ import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, ImageBackg
 
 const background = require('../assets/images/bg.jpg');
 const backgroundTwo = require('../assets/images/bg2.jpg');
+const backgroundThree = require('../assets/images/bg3.jpg');
 const one = require('../assets/images/feature1.jpg');
 const two = require('../assets/images/feature2.jpg');
 

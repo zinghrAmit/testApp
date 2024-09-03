@@ -8,6 +8,7 @@ const BookingScreen = () => {
         phoneNumber: '',
         age: '',
         address: '',
+        message: ''
     });
 
     const handleChange = (name, value) => {
@@ -56,10 +57,31 @@ const BookingScreen = () => {
                     value={form.address}
                     onChangeText={(text) => handleChange('address', text)}
                 />
+                <TextInput
+                    style={styles.input}
+                    placeholder="Message"
+                    value={form.message}
+                    onChangeText={(text) => handleChange('message', text)}
+                />
 
                 <TouchableOpacity style={styles.button} onPress={handleSubmit}>
                     <Text style={styles.buttonText}>Book Now</Text>
                 </TouchableOpacity>
+            </View>
+
+            <View style={styles.infoContainer}>
+                <Text style={styles.infoText}>
+                    We will reach out to you once we receive your booking request. Our team is dedicated to providing the best service and will get back to you within 24 hours. 
+                </Text>
+                <Text style={styles.infoText}>
+                    Please make sure that the contact details provided are correct, as we will use them to confirm your booking and provide further instructions.
+                </Text>
+                <Text style={styles.infoText}>
+                    If you have any specific requirements or requests, feel free to mention them in the message field, and we will do our best to accommodate them.
+                </Text>
+                <Text style={styles.callToAction}>
+                    Thank you for choosing our service! We look forward to serving you.
+                </Text>
             </View>
         </ScrollView>
     );
@@ -88,7 +110,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     input: {
-        height: 50, 
+        height: 50,
         borderColor: '#ddd',
         borderWidth: 1,
         borderRadius: 5,
@@ -105,12 +127,38 @@ const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowOpacity: 0.2,
         shadowRadius: 5,
-        shadowOffset: { width: 0, height: 2 }
+        shadowOffset: { width: 0, height: 2 },
     },
     buttonText: {
         color: '#ffffff',
         fontSize: 16,
         fontWeight: 'bold',
+    },
+    infoContainer: {
+        marginTop: 30,
+        backgroundColor: '#ffffff',
+        borderRadius: 8,
+        padding: 20,
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        shadowOffset: { width: 0, height: 2 },
+        textAlign: "center"
+    },
+    infoText: {
+        fontSize: 12,
+        color: '#555',
+        marginBottom: 10,
+        lineHeight: 22,
+        textAlign: "center"
+    },
+    callToAction: {
+        fontSize: 16,
+        color: '#1683a8',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginTop: 5,
     },
 });
 
